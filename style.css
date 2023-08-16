@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202124;
+    text-align: center;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 100px 50px 10px 50px;
+    font-size: 3rem;
+}
+h2 {
+    color: white;
+    text-align: center;
+    margin: 10px auto 50px;
+    font-weight: 300;
+    font-style:italic;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 7px;
+    border-radius: 25px;
+}
+
+form input {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: white;
+    color: #121212;
+    font-size: 18px;
+    padding: 0 30px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+form button {
+    padding: 0 40px;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: #BB86FC;
+    color: white;
+    font-size: 18px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 18px;
+    color: #121212;
+}
+
+#show-more-btn {
+    background: #BB86FC;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+    width: 25%;
+    font-size: 18px;
+    box-shadow: 5px 7px #000;
+}
+
+#search-results {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+#search-results img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 7px #000;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
